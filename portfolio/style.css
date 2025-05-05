@@ -1,0 +1,117 @@
+#introduction{
+    font-size: 60px;
+    font-family: cursive;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+@keyframes appear {
+    from{
+        opacity: 0.1;
+        scale:0.1 ;
+     }
+    to{
+        opacity: 1;
+        scale: 1;
+  }
+}
+.card{
+    animation: slideRight 2s;
+    animation-timeline:view();
+    animation-range:0% cover 30%;
+    width: 1200px;
+    height:auto;
+    border:5px solid;
+    padding:10px;
+    margin: 10px;
+    box-shadow: 0px 5px 10px;
+    font-size: 30px;
+     background-color:antiquewhite ;
+}
+.projects{
+    width: 690px;
+    height:auto;
+    border:5px solid;
+    padding:10px;
+    margin: 10px;
+    box-shadow: 0px 5px 10px;
+    font-size: 20px;
+     background-color:antiquewhite ;
+}
+.content img{
+    width:500px;
+    height: 350px;
+    border:2px solid;
+
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+}    
+#princess img{
+    width: 500px;
+    height: auto;
+    border:10px solid bisque;
+    border: radius 10px;
+    box-shadow: 5px 5px 5px 5px; 
+}
+#princess {
+    font-size: 70px;
+    text-align: center;
+    font-family: cursive;
+}
+#vd{
+    font-size:70px;
+    font-family: cursive;
+    
+}
+#about{
+    text-align:center ;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+}
+.projects{
+    animation: appear 2s ;
+    animation-timeline: view();
+    animation-range:0% cover 30%;
+    transition: transform 1s ease, box-shadow 0.3 ease;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.projects:hover  {
+    transform:scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+@keyframes slideRight{
+    from{
+        transform:translateX(-250px);
+        opacity: 0.1;
+     }
+    to{
+        transform:translateX(0px);
+        opacity:1
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
